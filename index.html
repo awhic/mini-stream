@@ -1,0 +1,80 @@
+<!-- Main -->
+<div class="content" role="main">
+  
+  <!-- Toolbar -->
+  <div class="toolbar" role="banner">
+    <img
+      width="40"
+      alt="Rover Logo"
+      src="assets/images/logo_banner.png"
+    />
+    <span>piStream</span>
+    <div class="spacer"></div>
+  </div>
+
+  <!-- Highlight Card -->
+  <div class="card highlight-card card-small">{{getGreeting()}}, {{name}}.</div>
+
+  <!-- Apps -->
+  <div class="card-container">
+    
+    <a class="card" target="_blank" rel="noopener" href="https://www.hulu.com/hub/home">
+      <img class="card-logo" src="assets/images/hulu.png" alt="Hulu" draggable="false">
+    </a>
+
+    <a class="card" target="_blank" rel="noopener" href="https://www.netflix.com/browse">
+      <img class="card-logo" src="assets/images/netflix.png" alt="Netflix" draggable="false">
+    </a>
+
+    <a class="card" target="_blank" rel="noopener" href="https://www.paramountplus.com/home/">
+      <img class="card-logo" src="assets/images/paramount.png" alt="Paramount+" draggable="false">
+    </a>
+
+    <a class="card" target="_blank" rel="noopener" href="https://open.spotify.com/">
+      <img class="card-logo" src="assets/images/spotify.png" alt="Spotify Web Player" draggable="false">
+    </a>
+
+    <a class="card" target="_blank" rel="noopener" href="https://www.youtube.com/">
+      <img class="card-logo" src="assets/images/youtube.png" alt="Youtube" draggable="false">
+    </a>
+
+    <a class="card" target="_blank" rel="noopener" href="https://www.espn.com/espnplus/">
+      <img class="card-logo" src="assets/images/espn.png" alt="ESPN+" draggable="false">
+    </a>
+
+    <a class="card" target="_blank" rel="noopener" href="https://www.vudu.com/content/movies/uxpage/View-All-Free-Movies-TV/206">
+      <img class="card-logo" src="assets/images/vudu.png" alt="Vudu" draggable="false">
+    </a>
+
+    <a class="card" target="_blank" rel="noopener" href="https://tubitv.com/home">
+      <img class="card-logo" src="assets/images/tubi.png" alt="TubiTV" draggable="false">
+    </a>
+
+  </div>
+
+  <!-- Actions -->
+  <input type="hidden" #selection>
+
+  <div class="card-container">
+
+    <div class="card card-small" (click)="selection.value = 'component'" tabindex="0">
+        <svg class="material-icons" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Add New App</span>
+    </div>
+
+    <div class="card card-small" (click)="selection.value = 'component'" tabindex="0">
+      <svg class="material-icons" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+    <span>Add New Subscription</span>
+  </div>
+
+    <div class="card card-small" (click)="selection.value = 'material'" tabindex="0">
+        <svg class="material-icons" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Add New User</span>
+    </div>
+
+  </div>
+
+  <!-- Footer Bar -->
+  <div class="card card-large">{{getClock()}}</div>
+
+</div>
