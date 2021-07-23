@@ -23,7 +23,7 @@
   </div>
 
   <!-- Highlight Card -->
-  <div class="card highlight-card card-small">{{getGreeting()}}</div>
+  <div id="greet" class="card highlight-card card-small"></div>
 
   <!-- Apps -->
   <div class="card-container">
@@ -231,7 +231,8 @@ body {
   
 <script type="text/javascript">
   function getGreeting() {
-    return 'Hello, Alex.';
+    var greeting = 'Welcome.';
+    document.getElementById("greet").innerHTML = greeting;
   }
 </script>
 </div>
