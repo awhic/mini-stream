@@ -1,2 +1,4 @@
 # mini-stream
-I hated how slow dedicated SMART apps can be. I liked how fast entertainment web apps loaded (Netflix, Hulu, etc.). I hooked up a raspberry pi to my TV and made this landing page my home page. Hit F11 and boom: a much better experience.
+A simple landing page for all of your entertainment needs.
+
+This site can be accessed now. To access, make sure you are on the main repository page, look for "Environments" on the righthand side, and below it, click on "github-pages".
